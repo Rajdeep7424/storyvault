@@ -1,0 +1,33 @@
+.hero{
+    display: flex;
+    place-items: center;
+    margin: var(--p6) auto 0 auto;
+    width: var(--p80);
+    gap: var(--p20);
+    font-size:var(--r1-5);
+    padding: var(--p2);
+}
+.hero>span>h2{
+    margin-bottom: var(--p8);
+}
+
+.cards{
+    display: flex;
+    gap: var(--p4);
+    width: var(--vw80);
+    margin: var(--p4) auto;
+}
+.card{
+    background-color: var(--cardbg);
+    width: var(--vw20);
+    height: var(--vh30);
+    border-radius: var(--px12);
+    padding: var(--px12);
+    overflow: hidden;
+}
+.card>h2,.card>p{
+    margin: var(p2);
+}
+.card>h2{
+    margin-bottom: var(--p10);
+}

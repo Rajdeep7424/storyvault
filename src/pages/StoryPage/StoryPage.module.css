@@ -1,0 +1,47 @@
+.story-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.story-header {
+  margin-bottom: 2rem;
+}
+
+.story-meta {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 0.5rem;
+  color: #666;
+}
+
+.tags {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tag {
+  background: #f0f0f0;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #333;
+}
+
+.story-content {
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+.back-button {
+  display: inline-block;
+  margin-top: 2rem;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.loading, .error {
+  text-align: center;
+  margin-top: 2rem;
+}
