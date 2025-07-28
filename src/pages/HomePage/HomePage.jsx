@@ -1,6 +1,8 @@
 import heroImg from '../../assets/images/heroImg.webp';
 import styles from './HomePage.module.css';
 import Sbtn from '../../components/Button/Button';
+import { NavLink } from 'react-router-dom';
+
 function Shome(){
     return(
         <main>
@@ -10,7 +12,9 @@ function Shome(){
                 <span>
                     <h2>StoryVault</h2>
                     <p>Story Vault is more than just a platform—it's a community where readers and writers come together to celebrate the art of storytelling. Our mission is to inspire creativity, foster connections, and bring stories to life.</p>
-                    <Sbtn text={"Read Stories"} />
+                    <NavLink to="/collection">
+                        <Sbtn text={"Read Stories"} />
+                    </NavLink>
                 </span>
             </div>
             <div className={styles.cards}>

@@ -7,9 +7,10 @@ form{
     min-height: 60vh;
     align-items: center;
     justify-content: center;
-    margin: var(--r10) auto;
+    margin: var(--p2) auto;
     border-radius: var(--px12);
     overflow: hidden;
+    padding: var(--p6);
 }
 form>h2{
     font-size: var(--r2);
@@ -42,4 +43,26 @@ form>h2{
 }
 .msgbox::-webkit-scrollbar-thumb {
   background: var(--accent2);
+}
+
+
+@media (max-width: 1280px){
+    form{
+        width: var(--vw90);
+        margin: var(--p3) auto;
+    }
+    .forminput{
+        width: var(--vw80);
+    }
+    
+}
+@media (max-width: 700px){
+    form{
+        width: var(--vw90);
+        margin: var(--p10) auto;
+    }
+    .forminput{
+        width: var(--vw80);
+    }
+    
 }

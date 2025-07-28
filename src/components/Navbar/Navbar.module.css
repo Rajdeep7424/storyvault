@@ -1,10 +1,9 @@
 nav{
     display: flex;
-    font-size: var(--r1-5);
     justify-content: space-between;
     width: var(--p80);
     align-items: baseline;
-    position: fixed;
+    position: sticky;
     top:var(--p1);
     left: var(--p10);
     padding: var(--p1);
@@ -13,7 +12,6 @@ nav{
     background-color: var(--bg);
 }
 
-/* Nav links container */
 .navLinks {
     display: flex;
     list-style: none;
@@ -22,7 +20,6 @@ nav{
     padding: 0;
 }
 
-/* Individual link styling */
 .navLink {
     text-decoration: none;
     color: var(--fcolor);
@@ -35,14 +32,14 @@ nav{
     text-decoration: underline;
 }
 
-/* Style for the li inside navLink */
+
 .navLink li {
     list-style: none;
     margin: 0;
     padding: var(--r-5) 0;
 }
 
-/* Active link styling */
+
 .navLink.active {
     color: var(--accent1);
     border-bottom: var(--px2) solid var(--accent1);
@@ -61,4 +58,14 @@ nav{
     display: flex;
     align-items: baseline;
     gap: var(--r1);
+}
+
+@media(max-width: 700px){
+    nav{
+        flex-direction: column;
+        font-size: var(--px12);
+    }
+    .tagLine{
+        font-size: var(--px12);
+    }
 }
