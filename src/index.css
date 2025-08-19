@@ -1,0 +1,58 @@
+:root {
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  --bg:rgb(73, 97, 106);
+  --fcolor:white;
+  --cardbg:rgba(0, 0, 0, 0.3);
+  --btnbg:rgba(0, 0, 0, 0.13);
+  --accent1:#77d9f7;
+  --accent2:rgb(95, 233, 141);
+  --accent3:rgb(40, 53, 58);
+  --accent4:black;
+  --accent5:rgb(127, 166, 180);
+
+  --r-5:.5rem;
+  --r1:1rem;
+  --r1-5:1.5rem;
+  --r2:2rem;
+  --r4:4rem;
+  --r8:8rem;
+  --r10:10rem;
+  --r14:14rem;
+
+  --vh30:30vh;
+  --vh50:50vh;
+
+  --vw20:20vw;
+  --vw30:30vw;
+  --vw50:50vw;
+  --vw80:80vw;
+  --vw90:90vw;
+
+  --p1:1%;
+  --p2:2%;
+  --p3:3%;
+  --p4:4%;
+  --p6:6%;
+  --p8:8%;
+  --p10:10%;
+  --p20:20%;
+  --p25:25%;
+  --p35:35%;
+  --p80:80%;
+  --p90:90%;
+  --p100:100%;
+
+  --px2:2px;
+  --px4: 4px;
+  --px8:8px;
+  --px10: 10px;
+  --px12:12px;
+
+  --cursor:pointer;
+  --bradius:20px;
+
+
+  --nf-shadow:var(--px4) var(--px4) var(--px10) var(--accent3);
+  --nf-shadow2:var(--px4) var(--px4) var(--px10) var(--accent4);
+  --nf-shadow3:var(--px4) var(--px4) var(--px10) var(--accent1);
+}

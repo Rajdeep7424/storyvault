@@ -1,0 +1,68 @@
+form{
+    display: flex;
+    flex-direction: column;
+    gap: var(--r2);
+    background-color: var(--cardbg);
+    width: var(--vw50);
+    min-height: 60vh;
+    align-items: center;
+    justify-content: center;
+    margin: var(--p2) auto;
+    border-radius: var(--px12);
+    overflow: hidden;
+    padding: var(--p6);
+}
+form>h2{
+    font-size: var(--r2);
+}
+.formSection{
+    font-size: var(--r1-5);
+    display: flex;
+    flex-direction: column;
+}
+.forminput{
+    background-color: transparent;
+    border: 1px solid var(--accent1);
+    border-radius: var(--px4);
+    color: var(--fcolor);
+    font-size: var(--r1);
+    flex-direction: column;
+    width: var(--vw30);
+    margin-top: var(--r-5);
+    padding: var(--r1);
+}
+.forminput:focus{
+    color: var(--fcolor);
+    font-size: var(--r1);
+}
+.msgbox{
+   height: 15vh;
+}
+.msgbox::-webkit-scrollbar {
+  width: var(--px2);
+}
+.msgbox::-webkit-scrollbar-thumb {
+  background: var(--accent2);
+}
+
+
+@media (max-width: 1280px){
+    form{
+        width: var(--vw90);
+        margin: var(--p3) auto;
+    }
+    .forminput{
+        width: var(--vw80);
+    }
+    
+}
+@media (max-width: 700px){
+    form{
+        width: var(--vw90);
+        margin: var(--p10) auto;
+    }
+    .forminput{
+        width: var(--vw80);
+    }
+    
+}

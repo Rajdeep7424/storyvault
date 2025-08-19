@@ -1,0 +1,84 @@
+/* ===== Base Styles ===== */
+.hero {
+  display: flex;
+  place-items: center;
+  margin: auto;
+  width: min(80vw, 1200px); /* Better than vw80 */
+  gap: var(--p20);
+  font-size: var(--r1-5);
+  padding: var(--p1);
+}
+.hero>span>h2{
+    margin-bottom: var(--p1);
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap */
+  justify-content: center; /* Center cards */
+  gap: var(--p4);
+  width: min(80vw, 1400px);
+  margin: var(--p4) auto;
+}
+
+.card {
+  background-color: var(--cardbg);
+  border-radius: var(--px12);
+  padding: var(--px12);
+  overflow: hidden;
+  flex: 1 1 calc(20% - var(--p4)); /* Default 5 cards/row */
+  min-width: 250px; /* Minimum card width */
+}
+
+/* ===== 1024px Breakpoint (2 cards/row) ===== */
+@media (max-width: 1280px) {
+  .hero {
+    flex-direction: column;
+    font-size: var(--r1);
+    margin: var(--p4) auto 0 auto;
+  }
+    .hero>img{
+    width: 300px;
+    height: auto;
+  }
+  
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 columns */
+    width: min(90vw, 1000px);
+  }
+  
+  .card {
+    width: 100%; /* Full width of grid cell */
+    margin: 0; /* Remove auto margins */
+    flex: none; /* Disable flex behavior */
+  }
+}
+
+/* ===== 700px Breakpoint (1 card/row) ===== */
+@media (max-width: 700px) {
+  .hero {
+    margin: var(--p6) auto 0 auto;
+    font-size: var(--r1);
+  }
+  .hero>span>h2{
+    margin-bottom: var(--p2);
+}
+.hero>img{
+  width: 300px;
+  height: auto;
+}
+  
+.cards {
+  grid-template-columns: 1fr; /* Single column */
+  width: min(90vw, 600px);
+  font-size: var(--r1);
+}
+
+.card {
+  margin: var(--p2) 0; /* Vertical spacing only */
+}
+.card>h2{
+  margin-bottom: var(--p2);
+}
+}

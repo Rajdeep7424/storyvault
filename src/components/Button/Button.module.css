@@ -1,0 +1,15 @@
+.btnPrimary{
+    padding: var(--r1);
+    font-size: var(--r1-5);
+    margin-top: var(--r1);
+    color: var(--fcolor);
+    font-weight:500;
+    border-radius: var(--px12);
+    border: none;
+    background-color: transparent;
+    box-shadow: var(--nf-shadow3);
+}
+.btnPrimary:hover{
+    cursor: pointer;
+    background-color: var(--btnbg);
+}

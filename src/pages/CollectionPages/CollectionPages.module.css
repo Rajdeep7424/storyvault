@@ -1,0 +1,54 @@
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--r2);
+}
+
+.storiesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--r2);
+  margin-top: var(--r2);
+}
+
+.storyCardLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.storyCard {
+  background: var(--btnbg);
+  border-radius: var(--px8);
+  padding: var(--r1-5);
+  box-shadow: var(--nf-shadow2);
+  transition: all 0.3s ease;
+  height: var(--p100);
+  display: flex;
+  flex-direction: column;
+}
+
+.storyCard:hover {
+  transform: translateY(-5px);
+
+}
+
+.storyCard h3 {
+  margin-top: 0;
+}
+
+.storyCard p {
+  color: var(--accent1);
+  flex-grow: 1;
+}
+
+.categories {
+  margin-top: var(--r1);
+  font-size: var(--r1);
+  color: var(--accent5);
+}
+
+.loading {
+  text-align: center;
+  padding: var(--r2);
+  font-size: var(--r1);
+}
