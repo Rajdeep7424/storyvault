@@ -2,11 +2,11 @@ import instagram from '../../assets/images/instagram.svg';
 import linkdin from '../../assets/images/linkdin.svg'
 import x from '../../assets/images/x.svg'
 import youtube from '../../assets/images/youtube.svg'
-import './Footer.module.css'
+import styles from './Footer.module.css'
 
 function Sfooter(){
     return(
-        <footer>
+        <footer className={styles.footer}>
             <span>
                 <img src={instagram} alt="" />
                 <img src={linkdin} alt="" />

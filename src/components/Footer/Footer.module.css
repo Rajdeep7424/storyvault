@@ -1,4 +1,4 @@
-footer{
+.footer{
     display: flex;
     justify-content: space-around;
     max-width: 60vw;
@@ -9,19 +9,19 @@ footer{
     border-radius: var(--bradius);
     margin-bottom: var(--r1);
 }
-footer>span>img{
+.footer>span>img{
     margin-right: var(--r1);
 }
-footer>span>img:hover{
+.footer>span>img:hover{
     cursor: var(--cursor);
 } 
 
 @media(max-width: 700px){
-    footer{
+    .footer{
         font-size: var(--px12);
         flex-direction: column;
     }
-    footer>span>img{
+    .footer>span>img{
     width: 20px;
 }
 }

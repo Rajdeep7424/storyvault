@@ -29,6 +29,9 @@
   flex: 1 1 calc(20% - var(--p4)); /* Default 5 cards/row */
   min-width: 250px; /* Minimum card width */
 }
+.card>a{
+  color: var(--accent1);
+}
 
 /* ===== 1024px Breakpoint (2 cards/row) ===== */
 @media (max-width: 1280px) {
@@ -78,7 +81,7 @@
 .card {
   margin: var(--p2) 0; /* Vertical spacing only */
 }
-.card>h2{
+.card>h3{
   margin-bottom: var(--p2);
 }
 }

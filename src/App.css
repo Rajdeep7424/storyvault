@@ -7,3 +7,6 @@ body{
   background-color: var(--bg);
   color: var(--fcolor);
 }
+main{
+  min-height: 84vh;
+}
